@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Usage</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #444;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #42a5f5, #478ed1);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #478ed1, #42a5f5);
+  transform: scale(1.05);
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(-45deg, #ff512f, #dd2476, #24c6dc, #514a9d);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  line-height: 1.6;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container chia 2 cột */
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.student {
+  border-left: 6px solid #4caf50; /* xanh lá */
+}
+
+.ai {
+  border-left: 6px solid #2196f3; /* xanh dương */
+}
+
+/* Responsive: nếu màn hình nhỏ thì xuống hàng */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+
+
+<body>
+  <h1>AI Usage</h1>
+
+  <div style="text-align: center; margin-bottom: 20px;">
+    <a href="index.html" class="back-btn">← Quay về Presentation</a>
+  </div>
+
+  <div class="container">
+    <!-- Phần sinh viên làm -->
+    <div class="column student">
+      <h2>👨‍🎓Sinh viên làm</h2>
+      <ul>
+        <li>Tự biên soạn nội dung dựa trên giáo trình.</li>
+        <li>Kiểm chứng, chỉnh sửa lại thông tin do AI sinh ra.</li>
+        <li>Thiết kế web,video và trình bày.</li>
+      </ul>
+    </div>
+
+    <!-- Phần AI hỗ trợ -->
+    <div class="column ai">
+      <h2>🤖AI hỗ trợ</h2>
+      
+      <div class="section">
+        <ul>
+          <li>AI hỗ trợ làm giao diện cho web đẹp hơn</li>
+          <li>AI tìm kiếm và tổng hợp thông tin cho chủ đề</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
